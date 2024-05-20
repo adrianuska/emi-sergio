@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://assets.lefebvre.es/media/lf-font/lf-font.css">
+    <link rel="stylesheet" href="https://assets.lefebvre.es/media/css/fonts-mttmilano.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,600,800">
+
+    <title>Ecosistema</title>
+</head>
+
+<body>
+<main>
+    <div class="container">
+        HEADER
+    </div>
+    <div class="overflow-hidden bg-ecosistema">
+        <div class="container">
+            <div class="row">
+                <div class="col">MODULO ACTIVA EL CONOCIMIENTO-LOGO</div>
+            </div>
+            <div class="row">
+                <div class="col">MODULO LEFEBVRE ECOSISTEMA</div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mt-5 mb-3 text-center text-lg-start">
+                    <div class="title">Un ecosistema de soluciones adaptado a tus necesidades</div>
+                    <button class="growing my-5">Personaliza ahora tu ecosistema </button>
+                </div>
+                <div class="offset-lg-1 col-lg-4 position-relative p-5 my-5 text-center">
+                    <button class="circle" id="switchField1"><span class="title-button">Gestión de negocio</span></button>
+                    <div class="result" id="result1">
+                        <div class="title">Gestión de negocio</div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget iaculis quam. Vestibulum rutrum nibh a sem hendrerit, nec interdum magna tempus. Fusce eget
+                    </div>
+
+                    <!-- <div class="">Gestión de cliente</div>-->
+                    <button class="circle" id="switchField2"><span class="title-button">Gestión de cliente</span></button>
+                    <div  class="result" id="result2">
+                        <div class="title">Gestión de cliente</div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget iaculis quam. Vestibulum rutrum nibh a sem hendrerit, nec interdum magna tempus.
+                    </div>
+
+                    <!--<div class="">Gestión de negocio</div>-->
+                    <button class="circle" id="switchField3">&nbsp;<span class="title-button">Conocimiento jurídico</span></button>
+                    <div  class="result" id="result3">
+                        <div class="title">Conocimiento jurídico</div>
+                        Quisque eget iaculis quam. Vestibulum rutrum nibh a sem hendrerit, nec interdum magna tempus.
+                    </div>
+
+                    <!--<div class="">Conocimiento jurídico</div>-->
+                    <button class="circle" id="switchField4">&nbsp;<span class="title-button">Conocimiento del cliente</span></button>
+                    <div  class="result" id="result4">
+                        <div class="title">Conocimiento del cliente</div>
+                        Quisque eget iaculis quam. Vestibulum rutrum nibh a sem hendrerit, nec interdum magna tempus.
+                    </div>
+
+                    <img src="images/cubo2.png" class="img-fluid img-cubo">
+                    <img src="images/reflejo.png" class="img-fluid reflejo">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">MODULO HAZLO SENCILLAMENTE INCREÍBLE</div>
+            </div>
+            <div class="row">
+                <div class="col">CONFIGURA TU ECOSISTEMA</div>
+            </div>
+            <div class="row js-video-preview">
+                <div class="col-12 col-md-2 position-relative">
+                    <div class="cont-txt-video js-video-trigger" role="button">Descubre Ecosistema Lefebvre en un minuto</div>
+                </div>
+                <div class="col-12 col-md-10 offset-md-2 mb-5">
+                    <img src="images/img-video.png" class="img-fluid js-video-trigger" role="button">
+                </div>
+            </div>
+            <div class="row d-none js-video" data-videoid="UEoU6VbHs2c">
+                <div class="col-12 js-video-container mb-5"></div>
+            </div>
+
+            <div class="row my-5">
+                <div class="col-5">
+                    <div class="text-uppercase fw-bold text-24">descarga gratis tu ebook</div>
+                    <div class="title my-2">"Aprende a crear un <span class="text-destacado">Ecosistema</span> digital de éxito para tu negcio"</div>
+                    <span class="fw-bold text-grey text-22">Da los primeros pasos en la creación de tu ecosistema con este ebook de descarga gratuita.</span>
+                </div>
+                <div class="col-6 offset-lg-1">
+                    <img src="images/img-form.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            $(document).ready(function(){
+                $("#switchField1").click(function() {
+                    $("#switchField1").addClass("slideInRight");
+                    $("#switchField2").addClass("slideInLeft1");
+                    $("#switchField3").addClass("slideOutUp1");
+                    $("#switchField4").addClass("slideOutDown1");
+                    $("#switchField1").removeClass("slideInRight2 slideInRight3 slideInRight4");
+                    $("#switchField2").removeClass("slideInLeft slideInLeft2 slideInLeft3 slideInLeft4");
+                    $("#switchField3").removeClass("slideOutUp slideOutUp2 slideOutUp3 slideOutUp4");
+                    $("#switchField4").removeClass("slideOutDown slideOutDown2 slideOutDown3 slideOutDown4");
+                    $("#switchField1 .title-button").hide(100);
+
+                    $(".img-cubo").removeClass("desplaza-cubo-arriba desplaza-cubo-izda desplaza-cubo-abajo");
+                    $(".img-cubo").addClass("desplaza-cubo-decha" );
+                    $(".reflejo").removeClass("desplaza-cubo-arriba desplaza-cubo-izda desplaza-cubo-abajo");
+                    $(".reflejo").addClass("desplaza-cubo-decha" );
+
+                    $("#result1").show(500);
+                    $("#result2").hide(800);
+                    $("#result3").hide(800);
+                    $("#result4").hide(800);
+                });
+                $("#switchField2").click(function() {
+                    $("#switchField2").addClass( "slideInLeft" );
+                    $("#switchField3").addClass( "slideOutUp2" );
+                    $("#switchField4").addClass( "slideOutDown2" );
+                    $("#switchField1").addClass( "slideInRight2" );
+                    $("#switchField1").removeClass("slideInRight slideInRight1 slideInRight3 slideInRight4");
+                    $("#switchField2").removeClass("slideInLeft1 slideInLeft3 slideInLeft4");
+                    $("#switchField3").removeClass("slideOutUp slideOutUp1 slideOutUp3 slideOutUp4");
+                    $("#switchField4").removeClass("slideOutDown slideOutDown1 slideOutDown3 slideOutDown4");
+                    $("#switchField2 .title-button").hide(100);
+
+                    $(".img-cubo").addClass( "desplaza-cubo-izda" );
+                    $(".img-cubo").removeClass( "desplaza-cubo-arriba desplaza-cubo-decha desplaza-cubo-abajo" );
+                    $(".reflejo").addClass( "desplaza-cubo-izda" );
+                    $(".reflejo").removeClass( "desplaza-cubo-arriba desplaza-cubo-decha desplaza-cubo-abajo" );
+
+                    $("#result2").show(500);
+                    $("#result1").hide(800);
+                    $("#result3").hide(800);
+                    $("#result4").hide(800);
+                });
+                $("#switchField3").click(function() {
+                    $("#switchField3").addClass("slideOutUp");
+                    $("#switchField4").addClass("slideOutDown3");
+                    $("#switchField1").addClass("slideInRight3");
+                    $("#switchField2").addClass("slideInLeft3");
+                    $("#switchField1").removeClass("slideInRight slideInRight1 slideInRight2 slideInRight4");
+                    $("#switchField2").removeClass("slideInLeft slideInLeft1 slideInLeft2 slideInLeft4");
+                    $("#switchField3").removeClass("slideOutUp1 slideOutUp2 slideOutUp4");
+                    $("#switchField4").removeClass("slideOutDown slideOutDown1 slideOutDown2 slideOutDown4");
+                    $("#switchField3 .title-button").hide(100);
+
+                    $(".img-cubo").removeClass( "desplaza-cubo-izda desplaza-cubo-decha desplaza-cubo-abajo" );
+                    $(".img-cubo").addClass( "desplaza-cubo-arriba" );
+                    $(".reflejo").removeClass( "desplaza-cubo-izda desplaza-cubo-decha desplaza-cubo-abajo" );
+                    $(".reflejo").addClass( "desplaza-cubo-arriba" );
+
+                    $("#result3").show(500);
+                    $("#result1").hide(800);
+                    $("#result2").hide(800);
+                    $("#result4").hide(800);
+                });
+                $("#switchField4").click(function() {
+                    $("#switchField4").addClass("slideOutDown");
+                    $("#switchField1").addClass("slideInRight4");
+                    $("#switchField2").addClass("slideInLeft4");
+                    $("#switchField3").addClass("slideOutUp4");
+                    $("#switchField1").removeClass("slideInRight slideInRight1 slideInRight2 slideInRight3");
+                    $("#switchField2").removeClass("slideInLeft slideInLeft1 slideInLeft2 slideInLeft3");
+                    $("#switchField3").removeClass("slideOutUp slideOutUp1 slideOutUp2 slideOutUp3");
+                    $("#switchField4").removeClass("slideOutDown1 slideOutDown2 slideOutDown3");
+                    $("#switchField4 .title-button").hide(100);
+
+                    $(".img-cubo").removeClass( "desplaza-cubo-izda desplaza-cubo-decha desplaza-cubo-arriba" );
+                    $(".img-cubo").addClass( "desplaza-cubo-abajo" );
+                    $(".reflejo").removeClass( "desplaza-cubo-izda desplaza-cubo-decha desplaza-cubo-arriba" );
+                    $(".reflejo").addClass( "desplaza-cubo-abajo" );
+
+                    $("#result4").show(500);
+                    $("#result1").hide(800);
+                    $("#result2").hide(800);
+                    $("#result3").hide(800);
+                });
+            });
+        </script>
+    </div>
+    <div class="container">
+        FOOTER
+    </div>
+</main>
+</body>
+</html>
